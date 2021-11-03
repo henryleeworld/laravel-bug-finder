@@ -1,16 +1,24 @@
 includes:
     - ./vendor/nunomaduro/larastan/extension.neon
 parameters:
+    fileExtensions:
+        - php
+        - module
+        - inc
     paths:
         - app
+        - tests
     # The level 8 is the highest level
-    level: 5
+    level: 6
 
     ignoreErrors:
         - '#Unsafe usage of new static#'
 
-    excludes_analyse:
-        - ./*/*/FileToBeExcluded.php
+    excludePaths:
+        - tests/*/data/*
+
+    parallel:
+        maximumNumberOfProcesses: 1
 
     checkMissingIterableValueType: false
     reportUnmatchedIgnoredErrors: false

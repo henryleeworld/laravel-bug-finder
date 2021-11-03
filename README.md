@@ -18,11 +18,11 @@ $ php artisan key:generate
 ```
 - 執行二進位制檔案用於分析目錄並輸出遇到的任何錯誤。
 ```sh
-$ ./vendor/bin/phpstan analyse
+$ ./vendor/bin/phpstan analyse -c {設定檔}
 ```
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/psxHlCf.png)
+![](https://i.imgur.com/fRTGO7l.png)
 > 執行二進位制檔案檢查
