@@ -1,4 +1,4 @@
-# Laravel 9 錯誤捕獲器
+# Laravel 10 錯誤捕獲器
 
 引入 nunomaduro 的 larastan 套件來擴增使用 PHPStan 通過靜態分析儘早捕獲錯誤，預設情況下，它將使用級別 0 來檢查「明顯」的錯誤，例如傳遞額外的引數或語法錯誤。隨著時間的推移，可以提高階別以進行更嚴格的分析。
 
@@ -18,11 +18,11 @@ $ php artisan key:generate
 ```
 - 執行二進位制檔案用於分析目錄並輸出遇到的任何錯誤。
 ```sh
-$ ./vendor/bin/phpstan analyse -c {設定檔}
+$ ./vendor/bin/phpstan analyse {掃描路徑} {-c 設定檔}
 ```
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/fttl69f.png)
+![](https://i.imgur.com/edpdAh2.png)
 > 執行二進位制檔案檢查
