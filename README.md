@@ -24,5 +24,5 @@ $ ./vendor/bin/phpstan analyse {掃描路徑} {-c 設定檔}
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/wJ5Yxpy.png)
+![](https://i.imgur.com/brN6Gbt.png)
 > 執行二進位制檔案檢查
